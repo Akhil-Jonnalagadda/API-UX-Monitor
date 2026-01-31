@@ -1,22 +1,22 @@
-# API UX Monitor 🚀
+# API UX Monitor 
 
 API UX Monitor is a lightweight API monitoring system. It runs synthetic checks, tracks uptime/latency, detects incidents, and shows everything in a web dashboard.
 
-## ✅ What It Does
+## What It Does
 
 - Monitor API endpoints on a schedule
 - Measure uptime and latency
 - Detect incidents (downtime or latency spikes)
 - Manage alerts and incidents from the UI
 
-## 🧱 Tech Stack
+## Tech Stack
 
 - **Frontend:** React + Vite + Bootstrap
 - **Backend:** Node.js + Express + TypeScript
 - **Database:** MongoDB + Mongoose
 - **Infra:** Docker + Docker Compose
 
-## 🚀 Quick Start (Docker)
+## Quick Start (Docker)
 
 ```bash
 docker-compose up -d --build
@@ -27,7 +27,7 @@ Open:
 - Frontend: http://localhost:3000
 - Backend: http://localhost:4000
 
-## 🧪 Quick Test (UI)
+##  Quick Test (UI)
 
 1. Go to **Endpoints** → **Add Endpoint**
 2. Use this sample:
@@ -90,13 +90,13 @@ CORS_ORIGIN=http://localhost:3000,http://localhost:5173
 - PUT /api/alerts/:id
 - DELETE /api/alerts/:id
 
-## 🧰 Troubleshooting
+## Troubleshooting
 
 - If the UI shows **Network Error**, check the backend is up:
   - http://localhost:4000/health
 - If Create fails, ensure Headers/Body are valid JSON or leave them empty.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 apps/
