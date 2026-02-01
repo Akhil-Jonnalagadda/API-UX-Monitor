@@ -43,6 +43,15 @@ app.get("/health", (req, res) => {
   });
 });
 
+// Root endpoint
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "API UX Monitor API",
+    version: "1.0.0",
+  });
+});
+
 // API Routes
 app.use("/api/endpoints", endpointRoutes);
 app.use("/api/metrics", metricsRoutes);
@@ -51,9 +60,10 @@ app.use("/api/alerts", alertRoutes);
 
 // 404 handler
 app.use((req, res) => {
+  logger.warn(`404 - ${req.method} ${req.path}`);
   res.status(404).json({
     success: false,
-    error: "Route not found",
+    error: `Route not found: ${req.method} ${req.path}`,
   });
 });
 

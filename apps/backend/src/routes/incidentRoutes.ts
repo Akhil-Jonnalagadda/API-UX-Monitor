@@ -9,10 +9,10 @@ import {
 
 const router = Router();
 
-router.get("/", getAllIncidents);
 router.get("/stats", getIncidentStats);
-router.get("/:id", getIncident);
+router.get("/", getAllIncidents);
 router.get("/:id/replay", getIncidentReplay);
 router.put("/:id/resolve", resolveIncident);
+router.get("/:id", getIncident);
 
 export default router;

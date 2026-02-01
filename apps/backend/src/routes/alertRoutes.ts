@@ -10,8 +10,8 @@ import {
 const router = Router();
 
 router.get("/", getAllAlertRules);
-router.get("/:id", getAlertRule);
 router.post("/", createAlertRule);
+router.get("/:id", getAlertRule);
 router.put("/:id", updateAlertRule);
 router.delete("/:id", deleteAlertRule);
 
